@@ -4,6 +4,7 @@ import { ethers } from 'hardhat';
 import { ADDRESS_ZERO } from '../helper-hardhat.config';
 
 const setupContract: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
+    // @ts-ignore
     const { getNamedAccounts, deployments, network } = hre;
     const { deploy, log, get } = deployments;
     const { deployer } = await getNamedAccounts()
